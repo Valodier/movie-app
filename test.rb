@@ -2,6 +2,9 @@ require "http"
 
 system "clear"
 
-response = HTTP.get("http://localhost:3000")
+puts "Please enter the ID for the movie you would like to see"
+id = gets.chomp
 
-pp response.parse(:json)
+response = HTTP.get("http://localhost:3000/one_movie/#{id}")
+
+p response.parse(:json)
