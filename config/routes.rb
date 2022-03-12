@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # root "articles#index"
   
   get "/actors/:id" => "actors#show"
+  get "/actors" => "actors#show_query"
   get "/actors" => "actors#index"
   get "/movies" => "movies#index"
   get "/movies/:id" => "movies#show"
