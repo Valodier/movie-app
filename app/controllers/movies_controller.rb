@@ -1,11 +1,11 @@
 class MoviesController < ApplicationController
-  def one_movie
+  def show
     movie_id = params["id"]
     movie = Movie.fetch(id: movie_id)
     render json: movie.as_json
   end
 
-  def all_movies
+  def index
     movies = Movie.all
     render json: movies.as_json
   end
