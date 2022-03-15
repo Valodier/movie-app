@@ -33,8 +33,12 @@ class MoviesController < ApplicationController
     render json: movie.as_json
   end
 
-  def method_name
-    
+  def destroy
+    movie_id = params[:id]
+    movie = Movie.find_by(id: movie_id)
+    movie.destroy
+
+    render json: {message: "IT'S GONE FOREVER NOOOO"}
   end
 
 end
