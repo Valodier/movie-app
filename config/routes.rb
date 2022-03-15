@@ -5,17 +5,17 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   #Movies
-get "/movies" => "movies#"
-post "/movies" => "movies#"
-get "/movies" => "movies#"
-patch "/movies" => "movies#"
-delete "/movies" => "movies#"
+get "/movies" => "movies#index"
+post "/movies" => "movies#create"
+get "/movies/:id" => "movies#show"
+patch "/movies/:id" => "movies#update"
+delete "/movies/:id" => "movies#destroy"
 
   #Actors
-get "/actors" => "actors#"
-post "/actors" => "actors#"
-get "/actors" => "actors#"
-patch "/actors" => "actors#"
-delete "/actors" => "actors#"
+get "/actors" => "actors#index"
+post "/actors" => "actors#create"
+get "/actors/:id" => "actors#show"
+patch "/actors/:id" => "actors#update"
+delete "/actors/:id" => "actors#destroy"
 
 end
