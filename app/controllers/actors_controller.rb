@@ -22,7 +22,7 @@ class ActorsController < ApplicationController
   end
 
   def update
-    actor_id = params [:id]
+    actor_id = params[:id]
     actor = Actor.find_by[id: actor_id]
     
     actor.first_name = params["first_name"] || actor.first_name
@@ -34,7 +34,11 @@ class ActorsController < ApplicationController
   end
 
   def destroy
+    actor_id = params[:id]
+    actor = Actor.find_by[id: actor_id]
+    actor.destroy
     
+    render json: {"MY GOD WHAT HAVE YOU DONE?!"}
   end
   
 
