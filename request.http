@@ -1,2 +1,26 @@
-POST http://localhost:3000/actors/1
+###Actor Index
+GET http://localhost:3000/actors
+
+###Actor Create
+POST http://localhost:3000/actors
 Content-Type: application/json
+
+{
+  "first_name": "",
+  "last_name": "",
+  "known_for": ""
+}
+
+###Actor Show
+GET http://localhost:3000/actors/
+
+###Actor update
+PATCH http://localhost:3000/actors/1
+Content-Type: application/json
+
+{
+  "known_for": "Tinker Tailor Soldier Spy"
+}
+
+###Actor Destroy
+DELETE http://localhost:3000/actors/
