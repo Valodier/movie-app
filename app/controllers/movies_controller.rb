@@ -4,8 +4,15 @@ class MoviesController < ApplicationController
     render json: movies.as_json
   end
 
-  def method_name
-    
+  def create
+    movie = Movie.new(
+      title: params["title"],
+      year: params[1],
+      plot: params[""]
+    )
+
+    movie.save
+    render json: movie.as_json
   end
 
   def show
@@ -17,7 +24,7 @@ class MoviesController < ApplicationController
   def method_name
     
   end
-  
+
   def method_name
     
   end
