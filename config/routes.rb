@@ -3,11 +3,19 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  
-  get "/actors/:id" => "actors#show"
-  post "/actors/:id" => "actors#show"
-  get "/actors" => "actors#show_query"
-  get "/actors" => "actors#index"
-  get "/movies" => "movies#index"
-  get "/movies/:id" => "movies#show"
+
+  #Movies
+get "/movies" => "movies#"
+post "/movies" => "movies#"
+get "/movies" => "movies#"
+patch "/movies" => "movies#"
+delete "/movies" => "movies#"
+
+  #Actors
+get "/actors" => "actors#"
+post "/actors" => "actors#"
+get "/actors" => "actors#"
+patch "/actors" => "actors#"
+delete "/actors" => "actors#"
+
 end
