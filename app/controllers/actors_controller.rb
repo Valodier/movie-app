@@ -17,8 +17,8 @@ class ActorsController < ApplicationController
 
   def show
     actor_id = params[:id]
-    show_id = Actor.find_by(id: actor_id)
-    render json: show_id.as_json
+    actor = Actor.find_by(id: actor_id)
+    render json: actor.as_json
   end
 
   def update

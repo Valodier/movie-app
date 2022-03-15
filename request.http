@@ -24,3 +24,32 @@ Content-Type: application/json
 
 ###Actor Destroy
 DELETE http://localhost:3000/actors/5
+
+
+###Movie Index
+GET http://localhost:3000/movies
+
+###Movie Create
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Movie",
+  "year": 1999,
+  "plot": "A movie"
+}
+
+###Movie Show
+GET http://localhost:3000/movies/2
+
+###Movie Update
+PATCH http://localhost:3000/movies/1
+Content-Type: application/json
+
+{
+  "year": "2000"
+}
+
+###Movie Destroy
+DELETE http://localhost:3000/movies/9
+
