@@ -6,13 +6,13 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name": "",
-  "last_name": "",
-  "known_for": ""
+  "first_name": "one",
+  "last_name": "more",
+  "known_for": "movie"
 }
 
 ###Actor Show
-GET http://localhost:3000/actors/
+GET http://localhost:3000/actors/1
 
 ###Actor update
 PATCH http://localhost:3000/actors/1
@@ -23,4 +23,4 @@ Content-Type: application/json
 }
 
 ###Actor Destroy
-DELETE http://localhost:3000/actors/
+DELETE http://localhost:3000/actors/5

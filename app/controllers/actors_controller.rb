@@ -35,7 +35,7 @@ class ActorsController < ApplicationController
 
   def destroy
     actor_id = params[:id]
-    actor = Actor.find_by[id: actor_id]
+    actor = Actor.find_by(id: actor_id)
     actor.destroy
 
     render json: {message: "MY GOD WHAT HAVE YOU DONE?!"}
