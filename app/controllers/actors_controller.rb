@@ -30,14 +30,14 @@ class ActorsController < ApplicationController
     actor.known_for = params ["known_for"] || actor.known_for
 
     recipe.save
-    render json: actor_id.as_json
+    render json: actor.as_json
   end
 
   def destroy
     actor_id = params[:id]
     actor = Actor.find_by[id: actor_id]
     actor.destroy
-    
+
     render json: {"MY GOD WHAT HAVE YOU DONE?!"}
   end
   
