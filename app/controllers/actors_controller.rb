@@ -6,6 +6,7 @@ class ActorsController < ApplicationController
 
   def create
 
+
     
   end
 
@@ -22,6 +23,9 @@ class ActorsController < ApplicationController
     actor.first_name = params["first_name"] || actor.first_name
     actor.last_name = params["last_name"] || actor.last_name
     actor.known_for = params ["known_for"] || actor.known_for
+
+    recipe.save
+    render json: actor_id.as_json
   end
 
   def destroy
