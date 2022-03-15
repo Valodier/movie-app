@@ -16,7 +16,13 @@ class ActorsController < ApplicationController
   end
 
   def update
-  
+    actor_id = params [:id]
+    actor = Actor.find_by[id: actor_id]
+    
+    actor.first_name = params["first_name"] || actor.first_name
+    actor.last_name = params["last_name"] || actor.last_name
+    actor.known_for = params ["known_for"] || actor.known_for
+  end
 
   def destroy
     
