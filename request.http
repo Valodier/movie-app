@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ###Actor Show
-GET http://localhost:3000/actors/1
+GET http://localhost:3000/actors/2.json
 
 ###Actor update
 PATCH http://localhost:3000/actors/1
