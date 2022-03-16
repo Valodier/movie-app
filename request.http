@@ -36,7 +36,8 @@ Content-Type: application/json
 {
   "title": "Movie",
   "year": 1999,
-  "plot": "A movie"
+  "plot": "A movie",
+  "director": "A person"
 }
 
 ###Movie Show
@@ -47,7 +48,8 @@ PATCH http://localhost:3000/movies/1
 Content-Type: application/json
 
 {
-  "year": "2000"
+  "director": "Not an Elf",
+  "english": true
 }
 
 ###Movie Destroy
