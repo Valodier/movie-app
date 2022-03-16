@@ -16,6 +16,9 @@ gem "puma", "~> 5.0"
 # gem "jbuilder"
 gem "jb"
 
+# Use Seed Dumb to generate db.seed from current db instnces
+gem "seed_dump"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
