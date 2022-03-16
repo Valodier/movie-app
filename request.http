@@ -1,8 +1,8 @@
 ###Actor Index
-GET http://localhost:3000/actors
+GET http://localhost:3000/actors.json
 
 ###Actor Create
-POST http://localhost:3000/actors
+POST http://localhost:3000/actors.json
 Content-Type: application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type: application/json
 GET http://localhost:3000/actors/2.json
 
 ###Actor update
-PATCH http://localhost:3000/actors/1
+PATCH http://localhost:3000/actors/1.json
 Content-Type: application/json
 
 {
