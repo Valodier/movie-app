@@ -1,8 +1,8 @@
 ###Movie Index
-GET http://localhost:3000/movies
+GET http://localhost:3000/movies.json
 
 ###Movie Create
-POST http://localhost:3000/movies
+POST http://localhost:3000/movies.json
 Content-Type: application/json
 
 {
@@ -13,16 +13,16 @@ Content-Type: application/json
 }
 
 ###Movie Show
-GET http://localhost:3000/movies/2
+GET http://localhost:3000/movies/2.json
 
 ###Movie Update
-PATCH http://localhost:3000/movies/13
+PATCH http://localhost:3000/movies/16.json
 Content-Type: application/json
 
 {
-  "director": "Not an Elf"
+  "director": "abs"
 }
 
 ###Movie Destroy
-DELETE http://localhost:3000/movies/13
+DELETE http://localhost:3000/movies/16
 
