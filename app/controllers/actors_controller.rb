@@ -13,9 +13,12 @@ class ActorsController < ApplicationController
       gender:params["gender"],
       age:params["age"]
     )
-
-    @actor.save
-    render :show
+    if @actor.save
+      render :show
+    else
+      render json: {errors: @actor.errors.full_messages},
+      status: 422
+    end
   end
 
   def show
@@ -34,8 +37,12 @@ class ActorsController < ApplicationController
     @actor.gender = params["gender"] || @actor.gender
     @actor.age = params["age"] || @actor.age
 
-    @actor.save
-    render :show
+    if @actor.save
+      render :show
+    else
+      render json: {erros: @actor.errors.full_messages},
+      status:422
+    end
   end
 
   def destroy

@@ -10,18 +10,18 @@ Content-Type: application/json
   "last_name": "more",
   "gender":"male",
   "known_for": "actor",
-  "age": 1
+  "age": 14
 }
 
 ###Actor Show
 GET http://localhost:3000/actors/2.json
 
 ###Actor update
-PATCH http://localhost:3000/actors/7.json
+PATCH http://localhost:3000/actors/10.json
 Content-Type: application/json
 
 {
-  "known_for": "Tinker Tailor Soldier Spy"
+  "known_for": "a"
 }
 
 ###Actor Destroy
