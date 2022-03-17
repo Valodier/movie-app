@@ -1,0 +1,28 @@
+###Movie Index
+GET http://localhost:3000/movies
+
+###Movie Create
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Movie",
+  "year": 1999,
+  "plot": "A movie",
+  "director": "A person"
+}
+
+###Movie Show
+GET http://localhost:3000/movies/2
+
+###Movie Update
+PATCH http://localhost:3000/movies/13
+Content-Type: application/json
+
+{
+  "director": "Not an Elf"
+}
+
+###Movie Destroy
+DELETE http://localhost:3000/movies/13
+

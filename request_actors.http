@@ -1,0 +1,30 @@
+###Actor Index
+GET http://localhost:3000/actors.json
+
+###Actor Create
+POST http://localhost:3000/actors.json
+Content-Type: application/json
+
+{
+  "first_name": "one",
+  "last_name": "more",
+  "gender":"male",
+  "known_for": "actor",
+  "age": 1
+}
+
+###Actor Show
+GET http://localhost:3000/actors/2.json
+
+###Actor update
+PATCH http://localhost:3000/actors/7.json
+Content-Type: application/json
+
+{
+  "known_for": "Tinker Tailor Soldier Spy"
+}
+
+###Actor Destroy
+DELETE http://localhost:3000/actors/7
+
+
