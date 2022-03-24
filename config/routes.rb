@@ -18,4 +18,7 @@ get "/actors/:id" => "actors#show"
 patch "/actors/:id" => "actors#update"
 delete "/actors/:id" => "actors#destroy"
 
+  #Users
+post "/users" => "users#create"
+
 end
