@@ -11,9 +11,15 @@ class Movie < ApplicationRecord
 
   def genre_names
     names = []
-    genres.each do |i| 
-      names << i[:name]
-    end
+    genres.each { |i| names << i[:name]} 
     return names
   end
+  
+  # def genre_names
+  #   names = []
+  #   genres.each do |i| 
+  #     names << i[:name]
+  #   end
+  #   return names
+  # end
 end
