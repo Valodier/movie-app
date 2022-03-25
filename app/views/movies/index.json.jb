@@ -2,7 +2,7 @@
   {
   id: movie.id,
   title: movie.title,
-  genre: movie.genres,
+  genre: movie.genres.each,
   year: movie.year,
   plot: movie.plot,
   actors: movie.actors,

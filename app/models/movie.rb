@@ -9,7 +9,11 @@ class Movie < ApplicationRecord
   # validates :director, presence: true
   # validates :director, length: {minimum: 2}
 
-  # def genre_names
-        
-  # end
+  def genre_names
+    names = []
+    genres.each do |i| 
+      names << i[:name]
+    end
+    return names
+  end
 end
