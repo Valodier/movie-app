@@ -8,4 +8,8 @@ class Movie < ApplicationRecord
   # validates :year, presence: true
   # validates :director, presence: true
   # validates :director, length: {minimum: 2}
+
+  # def genre_names
+        
+  # end
 end
