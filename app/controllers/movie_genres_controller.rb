@@ -7,7 +7,7 @@ class MovieGenresController < ApplicationController
     )
     
     if @movie_genre.save
-      render :index
+      render :show
     else
       render json: {message: @movie_genre.errors.full_messages},
       status: 422
